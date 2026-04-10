@@ -1,0 +1,35 @@
+{
+  "name": "@company/master-data-ui",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Reusable React master data UI library for manufacturing systems",
+  "type": "module",
+  "main": "./dist/master-data-ui.umd.js",
+  "module": "./dist/master-data-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/master-data-ui.es.js",
+      "require": "./dist/master-data-ui.umd.js"
+    },
+    "./styles.css": "./dist/master-data-ui.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "demo": "vite --config examples/demo/vite.config.js",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^6.1.0",
+    "zustand": "^5.0.3"
+  }
+}
